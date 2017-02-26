@@ -23,5 +23,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        robusButton.setOnLongClickListener(new Button.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                TextView robusResult = (TextView) findViewById(R.id.robusResulTxtVie);
+                robusResult.setText("Long clik");
+                return true;
+            }
+        });
     }
 }
