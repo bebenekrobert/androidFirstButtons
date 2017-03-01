@@ -14,16 +14,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/result_wiil_be_here"
+        android:layout_marginTop="29dp"
+        android:id="@+id/robusResulTxtVie"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="125dp"
-        android:id="@+id/robusResulTxtVie" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="@string/find"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/rubusFindBtn"
+        android:layout_below="@+id/robusResulTxtVie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:text="@string/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longitudeTxVi"
+        android:layout_alignLeft="@+id/rubusFindBtn"
+        android:layout_alignStart="@+id/rubusFindBtn"
+        android:layout_marginTop="67dp"
+        android:id="@+id/locationBtn" />
+
+    <TextView
+        android:text="@string/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longitudeTxVi"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/latitudeTxVi"
+        android:layout_above="@+id/longitudeTxVi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
 </RelativeLayout>
